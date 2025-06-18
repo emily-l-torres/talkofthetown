@@ -1,0 +1,23 @@
+
+# Data files - never commit large datasets
+data/raw/*
+data/processed/*
+data/external/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/external/.gitkeep
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Python
+__pycache__/
+
+# OS files
+.DS_Store
+.DS_Store?
