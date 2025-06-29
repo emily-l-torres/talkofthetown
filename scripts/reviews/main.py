@@ -5,24 +5,20 @@ from text_preprocessing import ReviewTextPreprocessor
 
 def main():
     # Configuration
-    input_file = "data/raw/yelp_academic_dataset_review.csv"
-    target_cities = [
-    'Las Vegas', 'Phoenix', 'Charlotte', 'Scottsdale', 'Pittsburgh',
-    'Montreal', 'Mesa', 'Henderson', 'Tempe', 'Chandler', 'Cleveland'
-    ]
-    sample_size = 50000
+    review_file = "data/raw/yelp_academic_dataset_review.csv"
+    business_file = "data/raw/yelp_academic_dataset_business.csv"
+    sample_per_star_per_city = 5000
     min_review_length = 20
     date_range = ('2005-01-01', '2019-12-31')
     
     # Step 1: Create balanced sample
     print("Creating balanced sample...")
     sampler = BalancedSampler(
-        target_cities=target_cities,
-        sample_size=sample_size,
+        sample_per_star_per_city=sample_per_star_per_city,
         min_review_length=min_review_length,
         date_range=date_range
     )
-    df_sample = sampler.create_balanced_sample(input_file)
+    df_sample = sampler.create_balanced_sample(review_file, business_file)
     
     # Step 2: Preprocess text
     print("Preprocessing text...")
