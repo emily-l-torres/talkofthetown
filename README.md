@@ -20,7 +20,7 @@ We experimented with various modeling approaches to this problem, as can be seen
 
 Our model relies on spaCy, ntlk, and TensorFlow libraries.
 
-Various methods were used to preprocess our data. These steps can be explored in the <a href="https://github.com/emily-l-torres/talkofthetown/tree/main/scripts" target="_blank">scripts folder</a> of this repository. Our finalized CSVs used by our model our available as a zipped folder that can be downloaded <a href="https://github.com/emily-l-torres/talkofthetown/tree/main/data/data-20250703T212152Z-1-001.zip" target="_blank">here</a>.
+Various methods were used to preprocess our data. These steps can be explored in the <a href="https://github.com/emily-l-torres/talkofthetown/tree/main/scripts" target="_blank">scripts folder</a> of this repository.
 
 Our model is implemented <a href="https://github.com/emily-l-torres/talkofthetown/blob/main/notebooks/Talk_of_the_Town.ipynb" target="_blank">here</a>.
 
