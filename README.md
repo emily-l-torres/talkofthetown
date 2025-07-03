@@ -22,7 +22,7 @@ Our model relies on spaCy, ntlk, and TensorFlow libraries.
 
 Various methods were used to preprocess our data. These steps can be explored in the <a href="https://github.com/emily-l-torres/talkofthetown/tree/main/scripts" target="_blank">scripts folder</a> of this repository.
 
-Our model is implemented <a href="https://github.com/emily-l-torres/talkofthetown/blob/main/notebooks/Talk_of_the_Town.ipynb" target="_blank">here</a>.
+Our model is implemented <a href="https://github.com/emily-l-torres/talkofthetown/blob/main/notebooks/Talk_of_the_Town.ipynb" target="_blank">here</a>. Please note the work was done in Google Colab, so there are references to the google.colab library and mounting data files stored in Google Drive.
 
 ## Set Up
 
